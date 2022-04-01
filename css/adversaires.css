@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: 'Donto';
+    src: url(font/Far-From\ Homecoming\ Updated.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* variables */
+:root {
+    --grena: #B11313;
+    --jaune: #F1C530;
+    --bleu: #114C92;
+    --noir: #000000;
+    --blanc: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+h1{
+    font-family: 'Donto';
+}
+
+/* Home */
+
+/* Header */
+
+header {
+    height: 40vh;
+    background-image: url(Illustration/img7.png);
+    background-size: cover;
+    background-position: -100px;
+    background-repeat: no-repeat;
+
+}
+
+/*  les logos */
+.logo-sayna {
+    width: 45px;
+}
+.logo-x {
+    width: 19px;
+}
+.logo-marvel {
+    width: 193px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+
+    padding-top: 1em;
+    padding-left: 1em;
+}
+/* nav */
+nav {
+    display: none;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+/* Accueil */
+
+.acceuil {
+    padding-top: 40px;
+    padding-left: 2em;
+    padding-bottom: 60px;
+}
+.titre {
+    font-size: 30px;
+}
+.sous-titre{
+    font-weight: bold;
+}
+
+/* Fin Header */
+
+/* main */
+main{
+    background: var(--jaune);
+    color: var(--noir);
+}
+.card {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: justify;
+
+}
+.card-img1 {
+    height: 200px;
+    background: url(Illustration/img8.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img2 {
+    height: 200px;
+    background: url(Illustration/img9.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img3 {
+    height: 200px;
+    background: url(Illustration/img10.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img4 {
+    height: 200px;
+    background: url(Illustration/img11.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img5 {
+    height: 200px;
+    background: url(Illustration/img12.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img6 {
+    height: 200px;
+    background: url(Illustration/img13.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img7 {
+    height: 200px;
+    background: url(Illustration/img14.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img8 {
+    height: 200px;
+    background: url(Illustration/img15.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img9 {
+    height: 200px;
+    background: url(Illustration/img16.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img10 {
+    height: 200px;
+    background: url(Illustration/img17.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-img11 {
+    height: 200px;
+    background: url(Illustration/img18.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-details {
+    padding: 2em 1em;
+    line-height: 2em;
+    border-left: 7px solid var(--noir);
+    border-right: 7px solid var(--noir);
+    border-bottom: 7px solid var(--noir);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.card-details h3 {
+    margin: 0;
+    text-align: center;
+}
+.gras {
+    font-weight: bold;
+}
+/* fin main */
+
+
+/* footer */
+footer{
+    background: var(--noir)
+}
+.footer1 {
+    padding: 2.5em 3em 1.5em ;
+    display: flex;
+    justify-content: space-between;
+}
+.liens a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    line-height: 25px;
+}
+footer .desktop {
+    display: none;
+}
+.liens .logo{
+    display: none;
+}
+select {
+    padding: 0.5em  1em;
+    border-radius: 15px;
+    border: none;
+    background: var(--jaune);
+    color: inherit;
+}
+.center {
+    padding: 0;
+    max-width: 300px;
+    margin: auto;
+}
+
+.icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.icons .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url(Logo/logof.png) var(--jaune) no-repeat;
+    background-position: center;
+    
+}
+
+.icons .icon2 {
+    background-image: url(Logo/logoi.png);
+}
+.icons .icon3 {
+    background-image: url(Logo/logoy.png);
+}
+.icons .icon4 {
+    background-image: url(Logo/logot.png);
+}
+
+.copyright {
+    text-align: center;
+}
+/* fin footer */
+
+@media screen and (min-width:1000px) {
+    /* header */
+   .top-bar{
+       padding: 1em 2em;
+       background: var(--jaune);
+       position: relative
+   }
+   .logo {
+    padding-left: 80px;
+  }
+   nav{
+       display: block;
+       position: absolute;
+       top: 30px;
+       right: 80px;
+   }
+   
+header {
+    height: 80vh;
+    background-size: cover;
+    background-position: 0px;
+ }
+.acceuil {
+       position: relative;
+       top: 130px;
+       left: 90px;
+   }
+.titre{
+       font-size: 70px;
+   }
+
+   /* fin header */
+   /* main */
+   main {
+       padding: 0 100px;
+   }
+   .card-parent {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 2.5em;
+   }
+   .card {
+       width: 30%;
+       margin-left: 0;
+       margin-right: 0;
+   }
+  
+    /* footer */
+    .footer1 {
+        display:flex;
+        justify-content: center;
+        
+    }
+       .liens {
+           display: flex;
+           align-items: center;
+           gap: 4em;
+       }
+       .logo {
+           padding: 0;
+       }
+       .inline div {
+           display: inline-block;
+       }
+       .liens .logo{
+        display: block;
+    }
+        footer .mobile {
+            display: none;
+        }
+        .center {
+            display: none
+        }
+       /* fin footer */
+    }

@@ -1,0 +1,353 @@
+
+@font-face {
+    font-family: 'Donto';
+    src: url(font/Far-From\ Homecoming\ Updated.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+/* variables */
+:root {
+    --grena: #B11313;
+    --jaune: #F1C530;
+    --bleu: #114C92;
+    --noir: #000000;
+    --blanc: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+h1, h2{
+    font-family: 'Donto';
+}
+p{
+    opacity: .9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Home */
+
+/* Header */
+
+header {
+    height: 62vh;
+   background: var(--jaune);
+
+}
+
+.top-bar {
+    padding: 1em 2em;
+    background: var(--grena);
+}
+
+.acceuil {
+    display: flex;
+    justify-content: space-between;
+}
+.acceuil img {
+    height: 340px;
+    transform: scaleX(-1);
+}
+
+/*  les logos */
+.logo-sayna {
+    width: 45px;
+}
+.logo-x {
+    width: 19px;
+}
+.logo-marvel {
+    width: 193px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+
+    padding-top: 1em;
+    padding-left: 1em;
+}
+/* nav */
+
+nav a {
+    display: none;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+/* Accueil */
+
+.acceuil {
+    padding-top: 40px;
+    padding-left: 2em;
+    padding-bottom: 60px;
+}
+.titre {
+    font-size: 30px;
+}
+.sous-titre{
+    font-weight: bold;
+}
+
+/* Fin Header */
+
+
+/* main */
+section.petiteAntenne {
+    background: var(--grena);
+    text-align: center;
+    padding: 2em 1em;
+}
+.petiteAntenne h1{
+    margin-top: 0;
+}
+
+.petiteAntenne .spider {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    border-radius: 30px;
+    background-image: url(Illustration/img34.png); 
+    background-size: cover;   
+}
+.petiteAntenne input {
+    display: block;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+
+    width: 350px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid 1px white;
+    background: inherit;
+
+}
+.petiteAntenne input[type="textarea"] {
+    height: 180px;
+}
+.petiteAntenne button {
+    margin-top: 20px;
+    width: 190px;
+    padding: 0.7em 1em;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    color: var(--grena);
+}
+
+section.saynaXmarvel {
+    background: var(--bleu);
+    padding: 2.5em;
+    text-align: center;
+}
+.saynaXmarvel p:first-child{
+    margin-top: 0;
+}
+
+.social button {
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: inherit;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+/* fin main */
+
+/* footer */
+footer{
+    background: var(--noir)
+}
+.footer1 {
+    padding: 2.5em 3em 1.5em ;
+    display: flex;
+    justify-content: space-between;
+}
+.liens a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    line-height: 25px;
+}
+footer .desktop {
+    display: none;
+}
+.liens .logo{
+    display: none;
+}
+select {
+    padding: 0.5em  1em;
+    border-radius: 15px;
+    border: none;
+    background: var(--grena);
+    color: inherit;
+}
+.center {
+    padding: 0;
+    max-width: 300px;
+    margin: auto;
+}
+
+.icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.icons .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url(Logo/logof.png) var(--grena) no-repeat;
+    background-position: center;
+    
+}
+
+.icons .icon2 {
+    background-image: url(Logo/logoi.png);
+}
+.icons .icon3 {
+    background-image: url(Logo/logoy.png);
+}
+.icons .icon4 {
+    background-image: url(Logo/logot.png);
+}
+
+.copyright {
+    text-align: center;
+}
+/* fin footer */
+
+
+
+@media screen and (min-width:1000px) {
+    /* header */
+   .top-bar{
+       background: var(--grena);
+       position: relative
+   }
+   .logo {
+    padding-left: 80px;
+  }
+  nav a{
+      display: inline-block;
+  }
+   nav{
+       display: block;
+       position: absolute;
+       top: 30px;
+       right: 80px;
+   }
+   
+header {
+    height: 80vh;
+    background-size: cover;
+    background-position: 0px;
+ }
+.acceuil {
+       position: relative;
+       top: 90px;
+       left: 10px;
+   }
+.titre{
+       font-size: 70px;
+   }
+
+   /* fin header */
+   /* main */
+   section.petiteAntenne {
+    background: var(--grena);
+    padding: 2em 1em;
+
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+.petiteAntenne .spider {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    border-radius: 30px;
+    background-image: url(Illustration/img34.png); 
+    background-size: cover;   
+}
+.forms{
+    align-self: flex-end;
+}
+
+.para {
+    display: flex;
+    gap: 3em;
+}
+.para1 {
+    width: 50%;
+}
+.para2 {
+    width: 50%;
+}
+section.saynaXmarvel {
+    background: var(--bleu);
+    padding: 2.5em 8em;
+    text-align: left;
+}
+.socialButton {
+    display: flex;
+    justify-content: space-around;
+}
+.social {
+    display: flex;
+    gap: 8em;
+}
+   /* fin main */
+/* footer */
+.footer1 {
+    display:flex;
+    justify-content: center;
+    
+}
+   .liens {
+       display: flex;
+       align-items: center;
+       gap: 4em;
+   }
+   .logo {
+       padding: 0;
+   }
+   .inline div {
+       display: inline-block;
+   }
+   .liens .logo{
+    display: block;
+}
+    footer .mobile {
+        display: none;
+    }
+    .center {
+        display: none
+    }
+   /* fin footer */
+}

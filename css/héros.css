@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'Donto';
+    src: url(font/Far-From\ Homecoming\ Updated.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+:root {
+    --grena: #B11313;
+    --jaune: #F1C530;
+    --bleu: #114C92;
+    --noir: #000000;
+    --blanc: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+h1, h2{
+    font-family: 'Donto';
+}
+p{
+    opacity: .9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Home */
+
+/* Header */
+
+header {
+    height: 40vh;
+    background: url(illustration/img19.png);
+    background-size: cover;
+    background-position: -100px;
+    background-repeat: no-repeat;
+
+}
+
+/*  les logos */
+.logo-sayna {
+    width: 45px;
+}
+.logo-x {
+    width: 19px;
+}
+.logo-marvel {
+    width: 193px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+
+    padding-top: 1em;
+    padding-left: 1em;
+}
+/* nav */
+nav {
+    display: none;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+/* Accueil */
+
+.acceuil {
+    padding-top: 40px;
+    padding-left: 2em;
+    padding-bottom: 60px;
+}
+.responsabilité {
+    font-weight: bold;
+    opacity: 1;
+}
+.titre {
+    font-size: 30px;
+}
+.sous-titre{
+    font-weight: bold;
+}
+
+/* Fin Header */
+
+/* main */
+
+section.valeurs {
+    background: var(--bleu);
+    padding: 3em 2em;
+}
+
+.valeurs h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.valeurs p {
+    text-align: justify;
+}
+p.sous-titre {
+    text-align: center;
+    font-size: 17px;
+}
+.first-p{
+    margin-top: 40px;
+}
+.midle-p{
+    margin-top: 50px;
+}
+q {
+    margin-left: 30px;
+    font-weight: bold;
+}
+.last-p {
+    margin-bottom: 0;
+}
+
+.video {
+    height: 40vh;
+    width: 100%;
+}
+
+
+.fondations {
+    height: 40vh;
+    background-image: url(Illustration/img20.png);
+    background-size: cover;
+}
+.fondations h1 {
+    margin-top: 0;
+}
+.centré {
+    text-align: center;
+    padding-top: 90px;
+}
+
+section.pouvoirs {
+    background: var(--bleu);
+    padding: 2em;
+}
+
+.pouvoirs p {
+    text-align: justify;
+    margin-bottom: 2.5em;
+    color: rgba(255, 255, 255, .8);
+}
+
+.pouvoirs p:first-child {
+    margin-top: 0;
+}
+.pouvoirs p:last-child {
+    margin-bottom: 0;
+}
+.pouvoir {
+    font-weight: bold;
+    color: var(--blanc);
+}
+
+
+section.jamaisSeul {
+    background: var(--bleu);
+    padding-bottom: 30px;
+}
+.jamaisSeul h1 {
+    text-align: center;
+    margin-top: 0;
+}
+.jamaisSeul h2 {
+    margin-left: 35px;
+}
+.ami{
+    height: 200px;
+    width: 320px;
+    background: url(Illustration/img21.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.imgAmis {
+    text-align: center;
+}
+
+.ami2 {
+    background: url(Illustration/img22.png);
+}
+.jamaisSeul p.descript {
+    padding: 2em;
+    text-align: justify;
+    color: rgba(255, 255, 255, .8);
+}
+
+.petiteCopine{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(Illustration/img23.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cop2 {
+    background-image: url(Illustration/img25.png);
+}
+.cop3 {
+    background-image: url(Illustration/img24.png);
+}
+.Copines {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Avengers-none {
+    display: none;
+}
+section.Avengers {
+    display: flex;
+}
+
+.perso{
+    margin-bottom: 20px;
+}
+.perso img{
+    height: 150px;
+}
+
+.personnages {
+    display: flex;
+    gap: 1em;
+    width: 50%;
+    padding: 3em 2em 2em 10em;
+    background: var(--grena);
+}
+.personnages2 {
+    width: 50%;
+}
+.personnages2 p {
+    text-align: justify;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .8);
+}
+.personnages2 p:first-child{
+    margin-top: 55px;
+}
+.bd {
+    width: 50%;
+    background-image: url(Illustration/img32.png)
+}
+
+.universRiche {
+    height: 80vh;
+    position: relative;
+    background-image: url(Illustration/img33.png);
+}
+.universRiche h1{
+    margin-top: 0;
+}
+.universRiche p:last-child{
+    margin-bottom: 0;
+}
+.text{
+    width: 30%;
+    padding: 2.1em 2em;
+    background:rgb(17, 76, 146, .7);
+
+    position: absolute;
+    right: 150px;
+    
+}
+.text p{
+    text-align: justify;
+}
+/* fin main */
+
+/* footer */
+footer{
+    background: var(--noir)
+}
+.footer1 {
+    padding: 2.5em 3em 1.5em ;
+    display: flex;
+    justify-content: space-between;
+}
+.liens a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    line-height: 25px;
+}
+footer .desktop {
+    display: none;
+}
+.liens .logo{
+    display: none;
+}
+select {
+    padding: 0.5em  1em;
+    border-radius: 15px;
+    border: none;
+    background: var(--bleu);
+    color: inherit;
+}
+.center {
+    padding: 0;
+    max-width: 300px;
+    margin: auto;
+}
+
+.icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.icons .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: url(Logo/logof.png) var(--bleu) no-repeat;
+    background-position: center;
+    
+}
+
+.icons .icon2 {
+    background-image: url(Logo/logoi.png);
+}
+.icons .icon3 {
+    background-image: url(Logo/logoy.png);
+}
+.icons .icon4 {
+    background-image: url(Logo/logot.png);
+}
+
+.copyright {
+    text-align: center;
+}
+/* fin footer */
+
+
+   @media screen and (min-width:1000px) {
+    /* header */
+   .top-bar{
+       padding: 1em 2em;
+       background: var(--bleu);
+       position: relative
+   }
+   .logo {
+    padding-left: 80px;
+  }
+   nav{
+       display: block;
+       position: absolute;
+       top: 30px;
+       right: 80px;
+   }
+   
+header {
+    height: 80vh;
+    background-size: cover;
+    background-position: 0px;
+ }
+.acceuil {
+       position: relative;
+       top: 130px;
+       left: 90px;
+   }
+.titre{
+       font-size: 70px;
+   }
+
+   /* fin header */
+
+   /* main */
+
+   .valeurs{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 45px;
+   }
+   .contenu {
+       width: 40%;
+   }
+   .video {
+       width: 45%;
+       height: 450px;
+       align-self: flex-end;
+   }
+
+    .fondations {
+        height: 50vh;
+        position: relative;
+    }
+    .centré {
+        position: absolute;
+        left: 150px;
+    }
+
+    .pouvoirs {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    .gauche {
+        width: 40%;
+    }
+    .droite{
+        width: 40%;
+    }
+
+    .jamaisSeul h2{
+        margin-left: 120px;
+    }
+    .one{
+        width: 40%;    
+        margin-left: auto;
+        margin-right: 85px;
+    }
+    .imgAmis {
+        position: relative;
+    }
+    .ami1 {
+        position: absolute;
+        left: 130px;
+    }
+    .ami2 {
+        position: absolute;
+        left: 290px;
+        top: 120px;
+    }
+    
+    .two {
+        width: 40%; 
+        margin-left: 90px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .Copines {
+        position: relative;
+    }
+    .cop1 {
+        position: absolute;
+        top: 40px;
+        right: 400px;
+    }
+    .cop2 {
+        position: absolute;
+        top: 200px;
+        right: 300px;
+    }
+    .cop3 {
+        position: absolute;
+        top: 40px;
+        right: 200px;
+    }
+
+    .Avengers-none {
+        display: block;
+    }
+   /* fin main */
+
+ /* footer */
+ .footer1 {
+    display:flex;
+    justify-content: center;
+    
+}
+   .liens {
+       display: flex;
+       align-items: center;
+       gap: 4em;
+   }
+   .logo {
+       padding: 0;
+   }
+   .inline div {
+       display: inline-block;
+   }
+   .liens .logo{
+    display: block;
+}
+    footer .mobile {
+        display: none;
+    }
+    .center {
+        display: none
+    }
+   /* fin footer */
+}
